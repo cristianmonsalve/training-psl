@@ -1,0 +1,26 @@
+#cloud-config
+cloud_final_modules:
+- [users-groups,always]
+users:
+  - name: monsalve
+    groups: [ sudo ]
+    sudo: [ "ALL=(ALL) NOPASSWD:ALL" ]
+    shell: /bin/bash
+    ssh-authorized-keys: 
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQClWvrMYfNhEJL/6SveTmH8+nuo+TXyNgoXknbtyqnqbzFA59WwG7QRwYxkSlgkZhgnhWypYP+3C7hglrips9nns6z9oQB9V/8RGMhyr4YlisgtADstf0f7KPVnrCxjxN5xK7XLFezlmSo+3WFcedDdrHE/1mrkacVhHOXPwPyEWrloCKRWR4KS5LcOzEVZ+hl3GhTw01aIXh8RrFcoe2gr9itF8ypOvRDC4kjxKWe0RvNIV8EXdyIBl0kCUVVE0R07vLKADtEI5TxtUZoI0p9L2kHB3PA2W5yEVDALFxwj0Oy6FPdQj240MjC5w1aF74xo/u7UbHRowXHhIPcqmIEYFbBfdHdmjNTanpL5A+JMkh5R5bnuPgutMxGjDHdgn6dAfb3h6QbVSCn7weu6DON9xsV4lYshr8Osk6MxhzE9x5xPAVw05u7/j01JbThnBd+GYtVYVZPLqIerFTskMdHFbaYckPcmRvDM6mg7pi1AP7q8TQpFd+7q25xbhvkQ6fM= cristian@cristian-VirtualBox
+
+  - name: david
+    groups: [ sudo ]
+    sudo: [ "ALL=(ALL) NOPASSWD:ALL" ]
+    shell: /bin/bash
+    ssh-authorized-keys: 
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC97TT92/M+Ef+0hZ4AqZJcYvCgLW2lF79ScgOpEfvRUeQTAGitkn4rEn1RP8+W+AAfU8+K2Ia4/jmfRbfuYDTXvTMPUAjlV5PxggxLbWiHr/07054cl2gGhOuRTlK4j50JeIoI2WhMCfO0HRtR8Us0XNPpvZCktLOXCLuloLFm/Oldlaud1QJhOc9zuwm0pEMLF5H69hgBm/UvFh5u3MZw/lNS5ZwEqFx4U6POx+DoIPqcCj6N4g+wRVyF6xWZeMhQY7+iVHDvt7tQHDQHv+L9M/lDdaq2aBJ4I8AKahWdIfOp4W4V6eMM3jgsY3V1vFMa/PYeZ07aZF3l4Opl3wMXZVqgLvWiHDTZIu736bHezj0HcX4V6lPQrvJSNKLl2aJChRumDf1OtCwxlqCzXs37kHkhAimyWsUv69fAD0H272d/DwB01G2zPNiQsRK5VV8escNPmOD9HnS6cPZibO/4/y1JggA93yGzUtOakZSFUMjgam6AJPlcYxVZacB7Dj515JHvtInSnut861El2Jcrf+uMDgrAFqIS8Y+m7WzIxVm96OBq5/Gf71LM8bqz/FwEOWe4dvxMdZc3KoMdO2Z9CIpwZZyuY2vMBLdY67vlK+hr8jbd31VTSrEUi8wvFVEyv1SmqfbkgJXdpnn1kyJh3n9YHNQUVwT90F+7R9YOWw== david.villa
+
+    - name: monsalve2
+    groups: [ sudo ]
+    sudo: [ "ALL=(ALL) NOPASSWD:ALL" ]
+    shell: /bin/bash
+    ssh-authorized-keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDIBxfxi/O0uDn/KB8APUozxoQRh7Z0tBx1eJ7PVGSgEPgeaKLXfqpHnf8vDdHHXrmU0rWH30ZeuacS8zoaSgv8LXata33ez3hqN1PIGgJ1KhXQj7Zb28mD7DCzZkpCqM8kT/rOe1zH10i8jqCSnocr08vM1dZvia2cf/Jy3BMGULWJ/Cm2mNNSgIqHBE7AWDf8FI90t/GQWHHaPSJw2MXN7/UsKd81MBEDBmBxw6wbwPm0QsYvb6u30IWPNQEKsvsyW9qPJXyl6OEz21L5YoFfOuQ+QlSEakxO4J2cptBH6I1BPHzBfY4VMjrhjgxu8XTS8Pma6MZxllEA0omDNtyrsKo2ffdg3ZgE4X7yhrg0jp1+bnbD0LONK8yl2J5a/JeT3zfR8CzFNPKl3xtkvBY+r5koOLVhQR0E7V/v88BuvdfpRasH1WAWd7Z5GADidaoUyi0sfIonjkaLPydLu5J0CtIDlMdqY31VYG/7AH1mUJ3ARPXLOPp4wDSwsHf/+jM= cristian@cristian-VirtualBox
+
+    
