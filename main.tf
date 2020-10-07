@@ -15,7 +15,7 @@ resource "aws_launch_template" "LT" {
   }
 
   user_data = filebase64("Scripts/user_access.cloud-init")
-  //user_data = filebase64("${path.module}/example.sh")
+
   tags = var.tags
 }
 
